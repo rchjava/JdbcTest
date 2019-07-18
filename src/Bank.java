@@ -68,7 +68,7 @@ public class Bank {
 	public int generateAccountNo() {
 		con=ConnectionHelper.getConnection();
 		try {
-			pst=con.prepareStatement("select case when max(accountNo) is NULL THEN 1 " +
+			   pst=con.prepareStatement("select case when max(accountNo) is NULL THEN 1 " +
 					" else MAX(AccountNo)+1 END accno from Accounts");
 			ResultSet rs=pst.executeQuery();
 			rs.next();
