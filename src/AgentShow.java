@@ -22,7 +22,7 @@ public class AgentShow {
 			pst.setInt(1, AgentID);
 			ResultSet rs = pst.executeQuery();
 		if(rs.next()){
-			System.out.println("AgentID"+rs.getInt("AgentID"));
+			System.out.println("AgentID :"+rs.getInt("AgentID"));
 			System.out.println("FirstName"+rs.getString("FirstName"));
 			System.out.println("MI"+rs.getString("MI"));
 			System.out.println("FullName"+rs.getString("FullName"));
