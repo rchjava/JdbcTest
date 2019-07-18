@@ -72,7 +72,7 @@ public class Bank {
 					" else MAX(AccountNo)+1 END accno from Accounts");
 			ResultSet rs=pst.executeQuery();
 			rs.next();
-			int accountNo=rs.getInt("accno");
+			  int accountNo=rs.getInt("accno");
 			return accountNo;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
